@@ -1,0 +1,60 @@
+.wrapper {
+  @apply flex flex-col w-full max-w-5xl;
+
+  & .searchContent {
+    @apply rounded-md p-6 text-white w-full;
+    background-color: #547488;
+  }
+  & .searchedContent {
+    @apply rounded-t-md p-6 text-white w-full;
+    background-color: #547488;
+  }
+
+  & .list {
+    @apply rounded-b-md px-6 pb-6 text-white w-full h-auto;
+    background-color: #547488;
+
+    & .listItem {
+      @apply xl:flex xl:flex-row lg:flex lg:flex-row md:flex md:flex-row sm:flex sm:flex-col p-4 rounded-md my-2 justify-between items-center;
+      background-color: #C3CED5;
+      color: #373A3C;
+
+      & .itemsContent {
+        @apply flex flex-col justify-start pb-2;
+
+        & .actionContent {
+          @apply flex flex-row gap-4 items-center;
+
+          & .image {
+            @apply pt-2;
+            width: 2rem !important;
+          }
+
+          & .title {
+            @apply text-base font-medium;
+          }
+
+          & .date {
+            @apply text-xs;
+          }
+        }
+
+        & .subContents {
+          @apply flex flex-row pb-2 gap-1;
+
+          & .subTitle {
+            @apply text-sm font-normal;
+          }
+          & .subContent {
+            @apply text-sm font-normal;
+          }
+        }
+      }
+    }
+    & .listItem:hover {
+      @apply flex p-4 rounded-md my-2;
+      background-color: #354955;
+      color: #FFF;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.eslintrc.js
+webpack
+node_modules
+out
+postcss.config.js
+lint-staged.config.js
+tailwind.config.js
+kubernetes
+build
+server
